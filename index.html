@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Click Hair: kits capilares, tratamientos y productos para el cuidado de tu cabello.">
+
+    <title>¡Click Hair!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="barra-superior">
+        <div class="info-superior">
+            <span>🚚 Envíos a todo el país</span>
+            <span>💳 Pagos seguros</span>
+            <span>♡ Belleza que cuida tu cabello</span>
+        </div>
+
+        <span class="cuenta">♙ Mi cuenta</span>
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <a href="#" class="logo">
+            <img src="img/Logo.jpeg" alt="Logo Click Hair">
+        </a>
+
+        <div class="buscador">
+            <input
+                type="search"
+                id="buscador"
+                placeholder="Buscar productos..."
+            >
+
+            <button id="btnBuscar" aria-label="Buscar">⌕</button>
+        </div>
+
+        <div class="acciones">
+            <button class="icono-favorito" aria-label="Favoritos">♡</button>
+
+            <button class="boton-carrito" id="btnCarrito" aria-label="Abrir carrito">
+                🛒
+                <span id="contadorCarrito">0</span>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- MENÚ -->
+    <nav class="menu">
+        <button class="activo" id="btnInicio">Inicio</button>
+        <button id="btnTodos">Todos los productos</button>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <img src="img/Banner.jpeg" alt="Bienvenida a Click Hair">
+    </section>
+
+    <!-- CATÁLOGO -->
+    <main class="contenido">
+
+        <section class="catalogo">
+
+            <div class="titulo-catalogo">
+                <div>
+                    <h1 id="tituloCategoria">Todos los productos</h1>
+
+                    <p>
+                        Encuentra los kits ideales para cuidar,
+                        fortalecer y darle brillo a tu cabello.
+                    </p>
+                </div>
+
+                <span class="cantidad" id="cantidadProductos">
+                    13 artículos
+                </span>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filtros">
+
+                <div id="filtrosCategorias"></div>
+
+                <p id="textoMostrando">Mostrando 13 productos</p>
+
+            </div>
+
+            <!-- PRODUCTOS -->
+            <div class="productos" id="contenedorProductos"></div>
+
+        </section>
+
+    </main>
+
+    <!-- FONDO DEL CARRITO -->
+    <div class="fondo-carrito" id="fondoCarrito"></div>
+
+    <!-- CARRITO -->
+    <aside class="carrito" id="carrito">
+
+        <div class="titulo-carrito">
+            <h2>🛒 Tu carrito</h2>
+
+            <button id="cerrarCarrito" aria-label="Cerrar carrito">
+                ×
+            </button>
+        </div>
+
+        <!-- PRODUCTOS DEL CARRITO -->
+        <div id="productosCarrito" class="productos-carrito">
+            <p class="carrito-vacio">Tu carrito está vacío.</p>
+        </div>
+
+        <!-- RESUMEN -->
+        <div class="resumen">
+
+            <h3>Resumen de compra</h3>
+
+            <div class="fila-resumen">
+                <span>Artículos:</span>
+                <span id="totalArticulos">0</span>
+            </div>
+
+            <div class="fila-resumen">
+                <span>Subtotal:</span>
+                <span id="subtotal">$0</span>
+            </div>
+
+            <div class="fila-resumen">
+                <span>Descuento:</span>
+                <span id="descuento">$0</span>
+            </div>
+
+            <div class="fila-total">
+                <strong>Total:</strong>
+                <strong id="total">$0</strong>
+            </div>
+
+            <button class="btn-finalizar" id="btnFinalizar">
+                Finalizar compra →
+            </button>
+
+            <button class="btn-vaciar" id="btnVaciar">
+                Vaciar carrito
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <img src="img/Logo.jpeg" alt="Click Hair">
+
+        <p>
+            Belleza que inspira.
+            Gracias por elegir Click Hair.
+        </p>
+
+        <p>
+            © 2026 Click Hair.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>
